@@ -135,6 +135,7 @@ const HomePage: React.FC = () => {
             alt="Avatar"
           />
         )}
+        <p className="ml-2">{authUserData?.authUser?.username}.</p>
         {!loading && <MdLogout className="mx-2 w-5 h-5 cursor-pointer" onClick={handleLogout} />}
         {loading && <div className="w-6 h-6 border-t-2 border-b-2 mx-2 rounded-full animate-spin"></div>}
       </div>
